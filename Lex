@@ -4,7 +4,6 @@
 [Ww][Hh][Ii][Ll][Ee]                        	{ pos += yyleng; printf("WHILE\n"); return yWHILE; }
 [Aa][Nn][Dd]                                 	{ pos += yyleng; printf("AND\n"); return yAND; }
 [Oo][Rr]                                     	{ pos += yyleng; printf("OR\n"); return yOR; }
-[Nn][Oo][Tt]                                 	{ pos += yyleng; printf("NOT\n"); return yNOT; }
 "+"                                          	{ pos += yyleng; printf("PLUS\n"); return yPLUS; }
 "-"                                          	{ pos += yyleng; printf("MINUS\n"); return yMINUS; }
 "*"                                          	{ pos += yyleng; printf("MULTIPLY\n"); return yMULTIPLY; }
