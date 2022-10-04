@@ -1,6 +1,6 @@
 %%
 [Hh][Ee][Ll][Ll][Oo]                          { pos += yyleng; printf("Привет"); }
-[Dd][Ee][Ll][Ee][Tt][Ee]			                { pos += yyleng; printf('DELETE'); return yDELETE; }
+[Dd][Ee][Ll][Ee][Tt][Ee]			       { pos += yyleng; printf('DELETE'); return yDELETE; }
 [Ff][Oo][Rr]                              	  { pos += yyleng; printf("FOR\n"); return yFOR; }
 [Ww][Hh][Ii][Ll][Ee]                        	{ pos += yyleng; printf("WHILE\n"); return yWHILE; }
 [Aa][Nn][Dd]                                 	{ pos += yyleng; printf("AND\n"); return yAND; }
