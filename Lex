@@ -9,6 +9,6 @@
 "-"                                          	{ pos += yyleng; printf("MINUS\n"); return yMINUS; }
 "*"                                          	{ pos += yyleng; printf("MULTIPLY\n"); return yMULTIPLY; }
 "/"                                          	{ pos += yyleng; printf("DIVIDE\n"); return yDIVIDE; }
-[A-Za-z] 			          { yylval = yytext[yyleng-1] - 'a'; return(LETTER); }
-[0-9] + 			          { int i; yylval = yytext[0] - '0'; for(i = 1; i < yyleng; i++)
+[A-Za-z] 			              { yylval = yytext[yyleng-1] - 'a'; return(LETTER); }
+[0-9] + 			              { int i; yylval = yytext[0] - '0'; for(i = 1; i < yyleng; i++)
 %%
